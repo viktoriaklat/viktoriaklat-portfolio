@@ -422,4 +422,9 @@
     .project_image_overview img {
         width: 100% ;
     }
+    
+     /* ----- CONTACT ----- */
+    .contact_titel {
+        font-size: 25px;
+    }
 }
