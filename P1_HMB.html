@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">  <!-- Link für Css -->
+    <script src="script.js" defer></script>
+
+    <title>Portfolio Landingpage / Design</title>
+</head>
+<body>
+    <header>
+
+        <!-- NAVIGATIONBAR-->
+        <div class="nav_container">
+            <nav class="navbar">
+                <!--Logo and Link to Mainpage-->
+                <div class="logo"><a href="index.html"> <img src="Design_Img/logo/logo2.svg" alt=""> </a></div> 
+
+                <!--Menu Burger/Button-->
+                <div class="menu_btn">
+                    <div class="menu_btn_lines"></div>
+                </div>
+
+                <!--List: Navigationbar-->
+                <ul class="nav_ul" id="nav_ul">
+                    <li class="nav_list"><a href="index.html" class="nav_a">Designs</a></li>
+                    <li class="nav_list"><a href="about.html" class="nav_a">About</a></li>
+                    <li class="nav_list"><a href="contact.html" class="nav_a">Contact</a></li>
+                    <li class="nav_list"><a href="rechtliches.html" class="nav_a">Rechtliches</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--HOME-->
+        <div class="project_content">
+
+            <!--Project -->
+            <div class="project_container" id="project_1">
+
+                <!--Project Gallery-->
+                <div class="project_wrapper">
+                    
+                    <a id="prev" onclick="plusSlide(-1)"> &#10094; </a>
+
+                    <div class="project_image_carousel">
+                        <img src="Design_Img/P1/BH 1.jpg" alt="img" draggable="false"> 
+                        <img src="Design_Img/P1/BH 2.3.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P1/BH 2.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P1/BH 3.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P1/BH 4.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P1/BH 5.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P1/BH 6.jpg" alt="img" draggable="false">
+                        <img src="Design_Img/P1/BH 7.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P1/BH 8.jpg" alt="img" draggable="false"> 
+                        <img src="Design_Img/P1/BH 9.jpg" alt="img" draggable="false">
+                        <img src="Design_Img/P1/BH 10.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P1/Bh 11.jpg" alt="img" draggable="false"> 
+                    </div> 
+
+                    <a id="next" onclick="plusSlide(1)"> &#10095; </a>  
+
+                </div>
+
+                <!--Project Description--> 
+                <div class="text">
+                    <div class="text_column">
+                        
+                        <div class="titel">Bremerhaven</div>
+                        <div class="titel"> Historisches </div>
+                        <div class="titel last"> Museum</div>
+
+                        <div class="caption">Jahr: 2019</div>
+                        <div class="caption">Thema: Corporate Design</div>
+                    </div>   
+                    <div class="description">Während meines Studiums habe ich mich mit einem fiktiven Rebranding der Corporate Identity 
+                        für das `Historische Museum Bremerhaven` beschäftigt. Bei der Neugestaltung des Logos lag der Fokus darauf, 
+                        dass es sich nicht zu stark vom alten Logo unterscheidet, 
+                        da dieses einen wichtigen Bezug zu einem Denkmal vor dem Museumsgebäude herstellt. 
+                        Dennoch sollte das neue Logo einen einfachen und geometrischen Stil aufweisen. 
+
+                        Neben dem Logo habe ich auch wichtige Geschäftspapiere entworfen, 
+                        die das neue Corporate Design widerspiegeln. Zudem wurde ein Wegweiser entwickelt, 
+                        der die Besucher des Museums bei der Orientierung unterstützt und das neue Designkonzept des Rebrandings vermittelt.
+                        
+                        Durch dieses fiktive Projekt konnte ich meine Fähigkeiten in der Gestaltung von Corporate Identity-Elementen 
+                        weiterentwickeln und praktische Erfahrungen im Bereich des Rebrandings sammeln. Das Ergebnis war ein stimmiges und 
+                        modernes Erscheinungsbild für das `Historische Museum Bremerhaven`, das die Identität des Museums unterstreicht und 
+                        eine konsistente Markenkommunikation ermöglicht.
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    
+<script src="BurgerToggle.js"></script>
+
+
+</body>
+</html>

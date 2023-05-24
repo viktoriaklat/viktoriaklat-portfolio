@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">  <!-- Link für Css -->
+    <script src="script.js" defer></script>
+
+    <title>Portfolio Landingpage / Design</title>
+</head>
+<body>
+    <header>
+
+        <!-- NAVIGATIONBAR-->
+        <div class="nav_container">
+            <nav class="navbar">
+                <!--Logo and Link to Mainpage-->
+                <div class="logo"><a href="index.html"> <img src="Design_Img/logo/logo2.svg" alt=""> </a></div> 
+
+                <!--Menu Burger/Button-->
+                <div class="menu_btn">
+                    <div class="menu_btn_lines"></div>
+                </div>
+
+                <!--List: Navigationbar-->
+                <ul class="nav_ul" id="nav_ul">
+                    <li class="nav_list"><a href="index.html" class="nav_a">Designs</a></li>
+                    <li class="nav_list"><a href="about.html" class="nav_a">About</a></li>
+                    <li class="nav_list"><a href="contact.html" class="nav_a">Contact</a></li>
+                    <li class="nav_list"><a href="rechtliches.html" class="nav_a">Rechtliches</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--HOME-->
+        <div class="project_content">
+
+            <!--Project -->
+            <div class="project_container" id="project_1">
+
+                <!--Project Gallery-->
+                <div class="project_wrapper">
+                    
+                    <a id="prev" onclick="plusSlide(-1)"> &#10094; </a>
+
+                    <div class="project_image_carousel">
+                        <img src="Design_Img/P3/SM2.jpg" alt="img" draggable="false"> 
+                        <img src="Design_Img/P3/SM1.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P3/SM3.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P3/SM4.jpg" alt="img" draggable="false">  
+                            
+                    </div> 
+
+                    <a id="next" onclick="plusSlide(1)"> &#10095; </a>  
+
+                </div>
+
+                <!--Project Description--> 
+                <div class="text">
+                    <div class="text_column">
+                        <div class="titel last">sleak</div>
+                        <div class="titel">Magazin</div>
+                        <div class="caption">Jahr: 2018</div>
+                        <div class="caption">Thema: Crossmedial Print</div>
+                    </div>   
+                    <div class="description">
+                        Sleak ist ein Magazin, das speziell für Menschen entwickelt wurde, die ein Interesse an Design und Medien haben. 
+                        Das Magazin wurde im Rahmen eines Medienprojektes von meinen Kommilitonen und mir, mit der Unterstützung zweier Dozenten,
+                        von Anfang bis Ende konzipiert, designt, gelayoutet und gedruckt. <br>
+                    
+                        Ein markantes Merkmal des Magazins ist sein minimalistisches und schlichtes Design, 
+                        welches durch spezifische Gestaltungsmuster hervorgehoben wird. 
+                        Der gesamte Magazininhalt wurde in den Farben Schwarz und Rot gestaltet, das Logo wurde mittels einer Blindprägung 
+                        auf das schwarze Cover geprägt. 
+                        <br><br>
+                        Zusätzlich zu der Print-Version 
+                        können die Inhalte des Magazins auch digital über die dazugehörige <a href="https://dmp.hs-bremerhaven.de/www/sleak-magazine/#" class="link_web">Website</a> abgerufen werden.
+                        <br><br>
+                        Bei der Gestaltung des Magazins hatte ich verschiedene Aufgabenbereiche.
+                        Ich habe mich um die Gestaltung des Artikels mit dem Titel "Back to Print" gekümmert. 
+                        Die Aufgabe bestand darin, die visuelle Gestaltung dem Gesamtkonzept des Magazins anzupassen. 
+                        Zudem habe ich auch bei der Gestaltung des Covers beigetragen.
+                         
+                        Das Projekt Sleak hat es uns ermöglicht, unsere Fähigkeiten in den Bereichen Design, 
+                        Layout und redaktionelle Arbeit weiterzuentwickeln. 
+                
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    
+<script src="BurgerToggle.js"></script>
+
+
+</body>
+</html>

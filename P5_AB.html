@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">  <!-- Link für Css -->
+    <script src="script.js" defer></script>
+
+    <title>Portfolio Landingpage / Design</title>
+</head>
+<body>
+    <header>
+
+        <!-- NAVIGATIONBAR-->
+        <div class="nav_container">
+            <nav class="navbar">
+                <!--Logo and Link to Mainpage-->
+                <div class="logo"><a href="index.html"> <img src="Design_Img/logo/logo2.svg" alt=""> </a></div> 
+
+                <!--Menu Burger/Button-->
+                <div class="menu_btn">
+                    <div class="menu_btn_lines"></div>
+                </div>
+
+                <!--List: Navigationbar-->
+                <ul class="nav_ul" id="nav_ul">
+                    <li class="nav_list"><a href="index.html" class="nav_a">Designs</a></li>
+                    <li class="nav_list"><a href="about.html" class="nav_a">About</a></li>
+                    <li class="nav_list"><a href="contact.html" class="nav_a">Contact</a></li>
+                    <li class="nav_list"><a href="rechtliches.html" class="nav_a">Rechtliches</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--HOME-->
+        <div class="project_content">
+
+            <!--Project -->
+            <div class="project_container" id="project_1">
+
+                <!--Project Gallery-->
+                <div class="project_wrapper">
+                    
+                    <a id="prev" onclick="plusSlide(-1)"> &#10094; </a>
+
+                    <div class="project_image_carousel">
+                        <img src="Design_Img/P5/Ab1.gif" alt="img" draggable="false"> 
+                        <img src="Design_Img/P5/ab2.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P5/ab3.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P5/ab4.jpg" alt="img" draggable="false">  
+
+                    </div> 
+
+                    <a id="next" onclick="plusSlide(1)"> &#10095; </a>  
+
+                </div>
+
+                <!--Project Description--> 
+                <div class="text">
+                    <div class="text_column">
+                        <div class="titel last">Grufo</div>
+                        <div class="titel "> Schriftentwicklung</div>
+                        <div class="caption">Jahr: 2017</div>
+                        <div class="caption">Thema: Illustration</div>
+                    </div>   
+                    <div class="description">Der Hauptgedanke bei der Gestaltung der Schriftart `Grufo` war die Verwendung 
+                        geometrischer Grundformen als Konstruktionsgrundlage. 
+                        Besonderes Augenmerk wurde dabei auf die ästhetischen Aspekte und die Verspieltheit der Schrift gelegt.
+                        Das Alphabet wurde in Form von zwei Plakaten vorgestellt, welche die einzigartigen Merkmale der Buchstaben hervorgeheben.
+                        Bei der Entwicklung der Schriftart wurden klare Gestaltungsregeln definiert, die sich durch das 
+                        gesamte Alphabet ziehen. Diese Gestaltungsregeln sorgen für eine konsistente und harmonische Optik der 
+                        Buchstaben in der Schriftart. Sie gewährleisten, dass die Buchstaben untereinander eine visuelle Einheit 
+                        bilden. Durch die konsequente Anwendung dieser Gestaltungsregeln 
+                        entsteht eine zusammenhängende und ästhetisch ansprechende Schrift.
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    
+<script src="BurgerToggle.js"></script>
+
+
+</body>
+</html>

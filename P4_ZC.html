@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">  <!-- Link für Css -->
+    <script src="script.js" defer></script>
+
+    <title>Portfolio Landingpage / Design</title>
+</head>
+<body>
+    <header>
+
+        <!-- NAVIGATIONBAR-->
+        <div class="nav_container">
+            <nav class="navbar">
+                <!--Logo and Link to Mainpage-->
+                <div class="logo"><a href="index.html"> <img src="Design_Img/logo/logo2.svg" alt=""> </a></div> 
+
+                <!--Menu Burger/Button-->
+                <div class="menu_btn">
+                    <div class="menu_btn_lines"></div>
+                </div>
+
+                <!--List: Navigationbar-->
+                <ul class="nav_ul" id="nav_ul">
+                    <li class="nav_list"><a href="index.html" class="nav_a">Designs</a></li>
+                    <li class="nav_list"><a href="about.html" class="nav_a">About</a></li>
+                    <li class="nav_list"><a href="contact.html" class="nav_a">Contact</a></li>
+                    <li class="nav_list"><a href="rechtliches.html" class="nav_a">Rechtliches</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--HOME-->
+        <div class="project_content">
+
+            <!--Project -->
+            <div class="project_container" id="project_1">
+
+                <!--Project Gallery-->
+                <div class="project_wrapper">
+                    
+                    <a id="prev" onclick="plusSlide(-1)"> &#10094; </a>
+
+                    <div class="project_image_carousel">
+                        <img src="Design_Img/P4/ZC1.jpg" alt="img" draggable="false"> 
+                        <img src="Design_Img/P4/ZC2.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P4/ZC3.jpg" alt="img" draggable="false">  
+                        <img src="Design_Img/P4/ZC4.jpg" alt="img" draggable="false">  
+
+                    </div> 
+
+                    <a id="next" onclick="plusSlide(1)"> &#10095; </a>  
+
+                </div>
+
+                <!--Project Description--> 
+                <div class="text">
+                    <div class="text_column">
+                        <div class="titel last">Zack Cure</div>
+                        <div class="caption">Jahr: 2022</div>
+                        <div class="caption">Thema: Illustration</div>
+                    </div>   
+                    <div class="description">
+                        Im Rahmen eines Projekts, bei dem ich nicht direkt mit den Kunden interagiert habe, 
+                        wurde ich beauftragt, Illustrationen für eine ICIG-Awareness-Kampagne anzufertigen. 
+                        Diese Illustrationen wurden aus Informationen von Dritten erstellt. 
+                        Insgesamt wurden neun verschiedene Illustrationen entwickelt, 
+                        die verschiedene Posen und Emotionen des Maskottchens Zack Cure darstellen. 
+                        Zack Cure ist ein schlicht gestalteter roter Panda, der bewusst in reduzierter Farbgebung gehalten wurde. 
+                        Die Gestaltung des Maskottchens zielt darauf ab, eine klare und unkomplizierte visuelle Darstellung zu schaffen, 
+                        die für die Zielgruppe ansprechend ist und die Botschaft der Kampagne effektiv vermittelt.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    
+<script src="BurgerToggle.js"></script>
+
+
+</body>
+</html>

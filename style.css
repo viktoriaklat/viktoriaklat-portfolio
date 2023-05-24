@@ -1,0 +1,425 @@
+/* Str + # = Kommentar */
+
+/* ----- COLOR DEFINITION ----- */
+:root {
+    --fontcolor: #2f2f2f;
+    --background: #f0f0f0;
+    --accent2: #16ff16;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fontcolor);
+    background-color: var(--background);
+    
+}
+
+::selection {
+    color: var(--accent2);
+    background-color: var(--background);
+}
+
+
+/* ----- NAVIGATIONBAR ----- */
+.nav_container {
+    /* background-color: aqua; */
+    padding: 10px 20px;
+    margin: auto;           
+    max-width:  114.75rem;                      /* ----- 1836px = 114.75rem ----- */
+}
+
+.navbar {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+/* ----- LOGO DESIGN ----- */
+    .logo {
+        z-index: 3;
+        user-select: none;
+    }
+
+        .logo a img{
+            /* background-color: forestgreen; */
+            height: 36px;
+            width: 100%;
+        }
+
+
+/* ----- MENU NATIGATION ----- */
+    .nav_ul {
+        /* background-color: yellow; */
+        position: fixed;
+        background-color: var(--background);
+        list-style-type: none;
+        display: block;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        padding: 60px 35px;
+        transform: translate(100vw);
+        transition: transform 0.4s ease-in-out;  
+        z-index: 2;   
+        user-select: none;
+    }
+
+        /* ----- Menu Navigation Animation ----- */
+            .nav_ul.open {
+                transform: translate(0)
+            }
+
+    .nav_list {
+        /* background-color: lightgreen; */
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    /* ----- MENU NATIGATION TEXT ----- */
+        .nav_a {
+            /* background-color: lightcoral; */
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 40px;
+            letter-spacing: 0.15px;
+            margin-top: 50px;
+            position: relative;
+            border: 0;
+            z-index: 1;
+        }
+
+    /* ----- MENU NATIGATION HIGHLIGHT ANIMATION ----- */
+        .nav_a::after {
+            content: "";
+            background-image: url(Design_Img/logo/strich1.svg);
+            background-repeat: no-repeat;
+            background-position: bottom ;
+            position: absolute;
+            width: 110%;
+            height: 100%;
+            top: 0;
+            left: -10px;
+            transform: scaleX(0) scaleY(0);
+            transform-origin: right;
+            z-index: -1;
+            transition: transform 200ms ease-in;
+        }
+
+            .nav_a:hover::after {
+                transform: scaleX(1) scaleY(1);
+                transform-origin: left bottom;
+            }
+
+
+/* ----- MENU BURGER ----- */
+    .menu_btn {
+        /* background-color: chartreuse; */
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        z-index: 3;
+        user-select: none;
+    }
+
+        /* ----- MENU BURGER LINIEN ----- */
+            .menu_btn_lines::before,
+            .menu_btn_lines {
+                content: "";
+                position: absolute;
+                width: 2.5rem;
+                height: 0.4rem;
+                background-color: var(--accent2);
+                transition: transform 0.6s ease-in-out;     
+            }
+
+            /* ----- MENU BURGER LINIEN Animation ----- */
+                .menu_btn_lines::before {
+                    transform: translateY(-1.2rem);
+                }
+
+                .menu_btn_lines {
+                    transform: translateY(0.6rem);
+                }
+
+                .menu_btn.open .menu_btn_lines::before {
+                    transform: rotate(90deg);
+                }
+
+                .menu_btn.open .menu_btn_lines {
+                    transform: rotate(-45deg);
+                }
+        
+
+/* ----- PROJECT DATA ----- */
+.project_content {
+    /* background-color: darkgoldenrod; */
+    max-width: 114.75rem;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project_container {
+    /* background-color: aqua;   */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+/* ----- PROJECT DATA TEXT ----- */
+    /* ----- GESAMT ----- */
+        .text {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            margin-top: 10px;
+            
+        }
+
+    /* ----- TITEL + CAPTION ----- */
+        .text_column {
+            margin-right: 10px;
+            
+        }
+        
+        /* ----- TITEL ----- */    
+                .titel {
+                    width: fit-content;
+                    height: fit-content;
+                    font-size: 36px;
+                    font-weight: bold;
+                    letter-spacing: 0.3px;
+                    padding-bottom: 10px;
+                }
+
+                    .last {
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    .last::after {
+                        position: absolute;
+                        content: "";
+                        background: url(Design_Img/logo/strich1.svg);
+                        background-repeat: no-repeat;
+                        background-position: bottom;
+                        width: 110%;
+                        height: 100%;
+                        z-index: -1;
+                        top: 0;
+                        left: -10px;
+                    }
+        /* ----- CAPTION ----- */        
+                .caption {
+                    margin-top: 40px;
+                    line-height: 1.5em;
+                    font-size: 16px;
+                    letter-spacing: 0.3px;
+                    font-weight: bold;
+                }
+
+                .caption:last-child {
+                    margin-top: 0;
+                    margin-bottom: 40px;
+                }
+
+    /* ----- DESCRIPTION ----- */        
+            .description {
+                line-height: 1.5em;
+                font-size: 16px;
+                letter-spacing: 0.3px;
+                margin-left: 12px;
+                margin-bottom: 40px;
+            }
+
+/* ----- PROJECT DATA GALLERY ----- */           
+        .project_wrapper {
+            user-select: none;
+            max-width: 114.75rem;
+            margin-bottom: 40px;
+            position: relative;
+            }
+
+            .project_wrapper a {
+                background-color: transparent;
+                top: 50%;
+                padding: 10px 25px;
+                font-size: 40px;
+                cursor: pointer;
+                border-radius: 50px;
+                font-weight: bold;
+                position: absolute;
+                transform: translateY(-50%);
+                color: #16ff16;
+            }
+
+                .project_wrapper a:first-child {
+                    left: -10px;
+                    display: none;
+                }
+
+                .project_wrapper a:last-child {
+                    right: -10px;
+                }
+
+            .project_wrapper .project_image_carousel {
+                font-size: 0px;
+                cursor: pointer;
+                white-space: nowrap;
+                overflow: hidden;
+                scroll-behavior: smooth;
+            }
+
+            .project_image_carousel.dragging {
+                cursor: grab;
+                scroll-behavior: auto;
+            }
+
+            .project_image_carousel.dragging img{
+                pointer-events: none;
+            }
+
+            .project_image_carousel img{
+                height: 600px;
+                object-fit: cover;
+                width: calc(100% / 3);
+                margin-left: 12px;
+            }
+
+                .project_image_carousel img:first-child {
+                margin-left: 0px;
+                }
+
+
+/* ----- HOME ----- */
+.project_wrapper_overview {
+    /* background-color: darkgoldenrod;  */
+    user-select: none;
+    max-width: 114.75rem;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.project_image_overview {
+    /* background-color: #252a55; */
+    font-size: 0;
+    margin-left: -12px;
+    
+}
+
+.project_image_overview img {
+    /* background-color: bisque; */
+    height: 600px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    padding-left: 12px;
+    margin-bottom: 40px;
+}
+
+
+
+/* ----- CONTACT ----- */
+.contact_titel {
+    /* background-color: brown; */
+    padding-bottom: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+.contact_titel:last-child {
+    padding-bottom: 40px;
+}
+
+/* ----- RECHTLICHES ----- */
+.rechtliches_titel {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    padding-bottom: 20px;
+}
+
+.rechtliches_description, .rechtliches_description2 {
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+    .rechtliches_description2 {
+        font-size: 20px;
+    }
+
+    .rechtliches_description {
+        font-size: 16px;
+    }
+
+.rechtliches_container .description {
+    margin-left: 0;
+}
+
+.datenschutz_ul .description {
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+    .datenschutz_ul .description:last-child {
+        margin-bottom: 40px;
+    }
+    
+
+@media screen and (max-width: 1400px) {
+
+    /* ----- HOME ----- */
+    .project_image_carousel img{
+        width: calc(100% / 2);
+    }
+
+    .text {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ----- DETAIl ----- */
+    .project_image_overview img {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    /* ----- HOME ----- */
+    .project_image_carousel img{
+        width: 100%;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description {
+        margin-left: 0;
+    }
+
+    /* ----- DETAIl ----- */
+
+    .project_image_overview img {
+        width: 100% ;
+    }
+}
